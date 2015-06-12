@@ -41,7 +41,7 @@
             this.buttonStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonStart.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonStart.ForeColor = System.Drawing.Color.Blue;
-            this.buttonStart.Location = new System.Drawing.Point(211, 169);
+            this.buttonStart.Location = new System.Drawing.Point(211, 147);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(80, 27);
             this.buttonStart.TabIndex = 0;
@@ -57,7 +57,7 @@
             this.textBoxInfo.Multiline = true;
             this.textBoxInfo.Name = "textBoxInfo";
             this.textBoxInfo.ReadOnly = true;
-            this.textBoxInfo.Size = new System.Drawing.Size(348, 150);
+            this.textBoxInfo.Size = new System.Drawing.Size(348, 131);
             this.textBoxInfo.TabIndex = 2;
             this.textBoxInfo.Text = resources.GetString("textBoxInfo.Text");
             // 
@@ -65,7 +65,7 @@
             // 
             this.buttonExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonExit.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExit.Location = new System.Drawing.Point(296, 169);
+            this.buttonExit.Location = new System.Drawing.Point(296, 147);
             this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(65, 27);
@@ -86,7 +86,7 @@
             this.AcceptButton = this.buttonStart;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(372, 208);
+            this.ClientSize = new System.Drawing.Size(372, 186);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.textBoxInfo);
             this.Controls.Add(this.buttonStart);

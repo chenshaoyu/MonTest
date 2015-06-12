@@ -118,16 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="textBoxInfo.Text" xml:space="preserve">
-    <value>MonTest 0.2 - Monitor Test Software
-Copyright © 2002-2015, DRAGONESE Studio
+    <value>MonTest 0.2 - free Monitor Test software for Windows
+Copyright © 2015, Shaoyu Chen
 
 Quick tips:
    - Press "Start Test" button to start test
    - Left click with mouse to cycle among tests
    - Right click with mouse to terminate tests
-   - Press "Exit" to exit application
-
-Created by Shaoyu Chen</value>
+   - Press "Exit" to exit application</value>
   </data>
   <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
