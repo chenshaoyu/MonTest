@@ -93,7 +93,7 @@
             this.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mainForm";
-            this.Text = "MonTest v0.1";
+            this.Text = "MonTest 0.2";
             this.Load += new System.EventHandler(this.mainForm_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.mainForm_MouseClick);
             this.ResumeLayout(false);

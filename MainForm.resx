@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="textBoxInfo.Text" xml:space="preserve">
-    <value>MonTest v0.1 - Monitor Test Software
-Copyright © DRAGONESE Studio, 2002-2015
+    <value>MonTest 0.2 - Monitor Test Software
+Copyright © 2002-2015, DRAGONESE Studio
 
 Quick tips:
    - Press "Start Test" button to start test

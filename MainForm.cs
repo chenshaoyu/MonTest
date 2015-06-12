@@ -12,8 +12,8 @@ namespace MonTest
 {
     /*
 
-    MonTest v0.1 - Monitor Test Software
-    Copyright © DRAGONESE Studio, 2002-2015
+    MonTest 0.2 - Monitor Test Software
+    Copyright © 2002-2015, DRAGONESE Studio
 
     Quick tips:
        - Press "Start Test" button to start test
@@ -29,6 +29,8 @@ namespace MonTest
     {
         bool isInTest = false;
         int testModeCounter = 0;
+        int gridCountX = 8;
+        int gridCountY = 8;
 
         public mainForm()
         {
@@ -125,7 +127,7 @@ namespace MonTest
 
         private void cycleTest()
         {
-            testModeCounter = testModeCounter % 5;
+            testModeCounter = testModeCounter % 9;
 
             switch (testModeCounter)
             {
@@ -142,11 +144,27 @@ namespace MonTest
                     break;
 
                 case 3:
-                    this.BackColor = Color.Green;
+                    this.BackColor = Color.Lime;
                     break;
 
                 case 4:
                     this.BackColor = Color.Blue;
+                    break;
+
+                case 5:
+                    drawColorGradientGrid(Color.White);
+                    break;
+
+                case 6:
+                    drawColorGradientGrid(Color.Red);
+                    break;
+
+                case 7:
+                    drawColorGradientGrid(Color.Lime);
+                    break;
+
+                case 8:
+                    drawColorGradientGrid(Color.Blue);
                     break;
 
                 default:
@@ -155,6 +173,26 @@ namespace MonTest
             }
 
             testModeCounter++;
+        }
+
+        private void drawColorGradientGrid(Color color)
+        {
+            Graphics g = this.CreateGraphics();
+            g.Clear(Color.Black);
+
+            SolidBrush br = new SolidBrush(color);
+
+            for (float i = 0; i < gridCountX; i++)
+            {
+                for (float j = 0; j < gridCountY; j++)
+                {
+                    br.Color = Color.FromArgb(Convert.ToInt32((i * gridCountY + j) * 256 / gridCountX / gridCountY), color);
+                    g.FillRectangle(br, i * this.Width / gridCountX, j * this.Height / gridCountY, this.Width / gridCountX, this.Height / gridCountY);
+                }
+            }
+
+            g.Dispose();
+            br.Dispose();
         }
     }
 }
