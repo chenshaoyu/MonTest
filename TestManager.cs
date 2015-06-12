@@ -35,24 +35,27 @@ namespace MonTest
             if (!isInTest && testList.Count > 0)
             {
                 currentTest = testList.First;
-                NextTest();
+                RenderTest();
             }
         }
 
         public void NextTest()
         {
+            if (currentTest.Next == null)
+            {
+                currentTest = testList.First;
+            }
+            else
+            {
+                currentTest = currentTest.Next;
+            }
+        }
+
+        public void RenderTest()
+        {
             if (currentTest != null)
             {
                 currentTest.Value.RenderTest();
-
-                if (currentTest.Next == null)
-                {
-                    currentTest = testList.First;
-                }
-                else
-                {
-                    currentTest = currentTest.Next;
-                }
             }
         }
     }

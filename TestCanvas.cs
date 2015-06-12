@@ -40,6 +40,7 @@ namespace MonTest
             if (e.Button == MouseButtons.Left)
             {
                 testManager.NextTest();
+                testManager.RenderTest();
             }
             else if (e.Button == MouseButtons.Right)
             {
@@ -52,6 +53,7 @@ namespace MonTest
             if (e.KeyChar == (char)Keys.Space)
             {
                 testManager.NextTest();
+                testManager.RenderTest();
             }
             else if (e.KeyChar == (char)Keys.Escape)
             {
@@ -66,6 +68,11 @@ namespace MonTest
             this.BackColor = Form.DefaultBackColor;
 
             this.Close();
+        }
+
+        private void TestCanvas_Paint(object sender, PaintEventArgs e)
+        {
+            testManager.RenderTest();
         }
     }
 }

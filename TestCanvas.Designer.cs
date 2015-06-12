@@ -42,6 +42,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TestCanvas";
             this.Text = "MonTest 0.3";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.TestCanvas_Paint);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TestCanvasForm_KeyPress);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TestCanvasForm_MouseClick);
             this.ResumeLayout(false);
